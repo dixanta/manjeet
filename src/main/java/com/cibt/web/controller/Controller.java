@@ -25,6 +25,7 @@ public abstract class Controller extends HttpServlet {
             ServletException,IOException{
         request
                 .getRequestDispatcher(viewPrefix +
-                        page + viewSuffix);
+                        page + viewSuffix)
+                .forward(request, response);
     }
 }

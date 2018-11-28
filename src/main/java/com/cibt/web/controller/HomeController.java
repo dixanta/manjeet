@@ -22,6 +22,7 @@ public class HomeController extends Controller {
     protected void doGet(HttpServletRequest request, 
             HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("name", "Manjeet Shakya");
+        
         view("home/index", request, response);
     }
     
