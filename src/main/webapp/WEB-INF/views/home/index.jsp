@@ -4,6 +4,7 @@
     Author     : USER
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,5 +14,11 @@
     </head>
     <body>
         <h1>Hello ${requestScope.name}</h1>
+        
+        <ul>
+            <c:forEach var="user" items="${requestScope.users}">
+                <li>${user.userName}</li>
+            </c:forEach>
+        </ul>
     </body>
 </html>
