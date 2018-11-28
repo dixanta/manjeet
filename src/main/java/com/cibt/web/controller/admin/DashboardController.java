@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author USER
  */
-@WebServlet(name = "admin",urlPatterns = {"/admin","admin/dashbaord"})
+@WebServlet(name = "admin",urlPatterns = {"/admin","/admin/dashboard"})
 public class DashboardController extends Controller{
 
     @Override
